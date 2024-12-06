@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Pizza Resto</title>
+</head>
+<body>
+    <header>
+        <h1><span>Pizza</span>Resto</h1>
+        <div class=menutoggle onclick="toggleMenu();"></div>
+        <ul class="nav">
+            <li><a href="#Acceil" onclick="toggleMenu();">Acceil</a></li>
+            <li><a href="#Plats" onclick="toggleMenu();">Plats</a></li>
+            <li><a href="#cafee"onclick="toggleMenu();">cafée</a></li>
+            <li><a href="#contact"onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="Acceil" id="Acceil">
+        <div class="text">
+            <h1>Bienvenue Sur <span>Pizza</span> Resto</h1>
+            <h2>le Pizza Resto est Pour vous, venez nombreux n'est rater pas cette occation "Halou Marraway"</h2>
+        </div>
+    </section>
+
+    <div class="text">
+        <h1>Les <span>Meilleurs</span> est a votre Dispositon</h1>
+        <h2>Notre Plats est toujours Pour vous , vous etez le meilleur client de notre entreprise choisir avec votre trnaquilité pour bien Mangé </h2>
+    </div>
+
+    <section class="Plats" id="Plats">
+        
+        <div class="cadre1">
+            <div class="pic">
+                <img src="image_plat/1732878344637.jpg" alt="pic1">
+            </div>
+        </div>
+
+        <div class="cadre2">
+            <div class="pic">
+                <img src="image_plat/1732878344666.jpg" alt="pic2">
+            </div>
+        </div>
+
+        <div class="cadre3">
+            <div class="pic">
+                <img src="image_plat/1732878344736.jpg" alt="pic3">
+            </div>
+        </div>
+
+        <div class="cadre4">
+            <div class="pic">
+                <img src="image_plat/1732878344782.jpg" alt="pic4">
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="text">
+        <h1> <span>cafée</span> est Pour vous</h1>
+        <h2>Notre Cafée est trés cool et Uniquement pour vous </h2>
+    </div>
+
+    <section class="cafee" id="cafee">
+        <div class="cadre"></div>
+        <div class="text">
+            <h1>Le Cafée</h1>
+            <h2>Le cafée Est votre Matinale venez nombreux ne raté pas cette Occation </h2>
+        </div>
+    </section>
+    <div class="text">
+        <h1> <span>Contacter Nous</span> Pour Avoir Plus</h1>
+    </div>
+
+    <section class="contact" id="contact">
+        <div class="mail">
+            <input type="email" placeholder="Entrer Votre Email" required>
+            <button type="submit" class="button_1">Envoyer</button>
+        </div>
+
+    </section>
+
+    <footer> 
+        <div class="cock">
+            <img src="person cock/1733057987429.jpg" alt="">
+        </div>
+        <div class="text">
+            <h1>Contactez Nous</h1>
+            <h2>trouvons nous sur le trois resaux pour avoir plus des avantages et des publicité de flam sur nos plats et sur la generalité
+                de notre activité</h2>
+            </h2>
+        </div>
+      
+        <div class="cock_b">
+            <img src="person cock/1733057987444.jpg" alt="cock">
+        </div>
+
+        
+    </footer>
+
+    <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+           const header = document.querySelector('header');
+             header.classList.toggle("sticky", window.scrollY > 0 );
+        });
+
+     
+    </script>
+
+   
+    
+</body>
+</html>
